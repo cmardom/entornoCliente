@@ -9,6 +9,12 @@ let control = true;
 
 do{
     st1 = prompt('Introduce un numero');
+
+    if (st1.length == 0){
+        console.log('No has introducido nada')
+        continue;
+    }
+
     num = parseInt(st1);
 
     if (isNaN(num)){
@@ -22,5 +28,6 @@ do{
         console.log('Es impar');
     }
     control = false;
+
 } while (control);
 
