@@ -91,3 +91,9 @@ factura.delete(numero); // devuelve true o false, elimina una propiedad
 // ESTRUCTURAS DE CONTROL - operadores lógicos - todos igual excepto:
 // == - compara diferentes tipos de datos
 // === - compara mismo tipo de datos
+
+
+// Para convertir un numero en cadena, se añade un ' ' detras:
+console.log(5 + ' ');
+
+//Si un numero no es un numero, sale NaN
