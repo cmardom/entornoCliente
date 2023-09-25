@@ -27,3 +27,9 @@ console.log('a = ', a); // para ver el valor de a
 console.log({a}); // otra forma de ver el valor de a, con llaves
 
 console.log('%c Mensaje formateado', 'color: blue'); // %indica código CSS, el mensaje saldrá de color azul
+
+
+// Los tipos primitivos se copian por valor.
+// Las copias se hacen con un determinado método dependiendo de su tipo.
+// Se convierte a string con stringify
+// Las copias de objetos se hacen con JSON.parse(JSON.stringify(s1)))
