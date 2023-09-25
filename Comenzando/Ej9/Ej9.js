@@ -1,6 +1,7 @@
 // hay que reescribir los ejercicios anteriores como funciones
 // copiar y pegar
 function Ej1 (){
+    //'1- Pide dos números y nos dice cuál es mayor, menor o si son iguales.'
     let num1 = prompt('Escribe un número');
     let num2 = prompt('Escribe otro número');
 
@@ -16,6 +17,7 @@ function Ej1 (){
 }
 
 function Ej2(){
+    //        '2- Igual que la opción 1, pero con control de errores '
     let control = true;
     let st1, st2;
     let num1, num2;
@@ -67,6 +69,7 @@ function Ej2(){
 }
 
 function Ej3(){
+    //        '3- Muestra la suma y la media de los números introducidos hasta que se introduzca un negativo'
     let contador = 0;
     let suma = 0;
     let entradaNumerica = 0;
@@ -83,6 +86,7 @@ function Ej3(){
 }
 
 function Ej4(){
+    //        '4- Muestra todos los números que hay entre dos números introducidos '
     let st1, st2;
     let num1, num2;
 
@@ -98,6 +102,7 @@ function Ej4(){
 }
 
 function Ej5(){
+    //        '5- Muestra todos los números impares que hay entre dos números introducidos '
     let st1, st2;
     let num1, num2;
 
@@ -115,6 +120,7 @@ function Ej5(){
 }
 
 function Ej6(){
+    //        '6- Muestra todos los números divisores de un número introducido '
     let st1;
     let num;
 
@@ -130,6 +136,7 @@ function Ej6(){
 }
 
 function Ej7(){
+    //        '7- Nos dice si un número es par o impar '
     let st1;
     let num;
     let control = true;
@@ -161,6 +168,7 @@ function Ej7(){
 }
 
 function Ej8(){
+    //        '8- Muestra la tabla de multiplicar del número introducido'
     let num, resultado;
     let st;
     let control = true;
@@ -193,7 +201,14 @@ function Ej8(){
 
 let control = true;
 do{
-    let opcion = prompt('Menu');
+    let opcion = prompt('Menu: \n 1- Pide dos números y nos dice cuál es mayor, menor o si son iguales. \n' +
+        '2- Igual que la opción 1, pero con control de errores \n' +
+        '3- Muestra la suma y la media de los números introducidos hasta que se introduzca un negativo \n' +
+        '4- Muestra todos los números que hay entre dos números introducidos \n' +
+        '5- Muestra todos los números impares que hay entre dos números introducidos \n' +
+        '6- Muestra todos los números divisores de un número introducido \n' +
+        '7- Nos dice si un número es par o impar \n' +
+        '8- Muestra la tabla de multiplicar del número introducido');
     switch (opcion){
         case "1": Ej1();
         break;
@@ -208,6 +223,8 @@ do{
         case "6": Ej6();
         break;
         case "7": Ej7();
+        break;
+        case "8": Ej8();
         break;
         default: control = false;
     }
