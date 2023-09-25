@@ -1,4 +1,4 @@
-// hay que reescribir los ejercicios anteriores como funcion
+// hay que reescribir los ejercicios anteriores como funciones
 // copiar y pegar
 function Ej1 (){
     let num1 = prompt('Escribe un número');
@@ -195,19 +195,19 @@ let control = true;
 do{
     let opcion = prompt('Menu');
     switch (opcion){
-        case 1: Ej1();
+        case "1": Ej1();
         break;
-        case 2: Ej2();
+        case "2": Ej2();
         break;
-        case 3: Ej3();
+        case "3": Ej3();
         break;
-        case 4: Ej4();
+        case "4": Ej4();
         break;
-        case 5: Ej5();
+        case "5": Ej5();
         break;
-        case 6: Ej6();
+        case "6": Ej6();
         break;
-        case 7: Ej7();
+        case "7": Ej7();
         break;
         default: control = false;
     }
