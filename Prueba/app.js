@@ -20,7 +20,7 @@ let cadena1 = "texto";
 cadena1 = "hola" //para reasignar no se pone let
 
 //concatenar valores
-console.log("a " +a); // lo convierte todo a cadena, y lo une sin espacio
+ console.log("a " +a); // lo convierte todo a cadena, y lo une sin espacio
 console.log('a', a); // con la coma lo concatena y lo separa
 
 console.log('a = ', a); // para ver el valor de a
@@ -33,3 +33,33 @@ console.log('%c Mensaje formateado', 'color: blue'); // %indica código CSS, el 
 // Las copias se hacen con un determinado método dependiendo de su tipo.
 // Se convierte a string con stringify
 // Las copias de objetos se hacen con JSON.parse(JSON.stringify(s1)))
+
+// s1 = s2 // apuntan a la misma dirección de memoria y tienen tipos primitivos
+// s3 = {..s1} // tiene el mismo valor, pero diferente referencia
+
+/*FUNCIONES*/
+function saludar(){
+ console.log('hola');
+}
+
+// Anónimas o lambda: no tienen nombre y se pueden asignar a una variable
+const saludar2 = function () {
+ console.log('hola otra vez');
+}
+
+saludar();
+saludar2();
+
+// las funciones reciben variables, y al ser variables pueden recibir funciones
+function discount (value){
+ return(value * 0.8);
+}
+function total (x, func){
+ console.log(func(x));
+}
+
+total (120, discount);
+
+// función flecha: permite hacer la asignación de variables sin poner 'function'
+const sumar = (a, b) => {return a+b;}; //Con llaves siempre hay que poner return
+const sumar = (a, b) => a+b; //Cuando solo hay una instruccion (devolucion) se pueden omitir las llaves.
